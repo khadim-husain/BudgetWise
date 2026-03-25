@@ -1,0 +1,167 @@
+.reports {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+}
+
+.summary-cards {
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  padding: 1.5rem;
+  border-left: 4px solid;
+}
+
+.income-card {
+  border-left-color: var(--income-color);
+  background: linear-gradient(135deg, #d1fae5 0%, #ffffff 100%);
+}
+
+.expense-card {
+  border-left-color: var(--expense-color);
+  background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+}
+
+.balance-card {
+  border-left-color: var(--primary-color);
+  background: linear-gradient(135deg, #dbeafe 0%, #ffffff 100%);
+}
+
+.summary-card h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.summary-card .amount {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0.5rem 0;
+}
+
+.chart-container {
+  height: 300px;
+  padding: 1rem;
+}
+
+.export-buttons {
+  float: right;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filters-section {
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table tbody tr:hover {
+  background-color: var(--bg-secondary);
+}
+
+.type-income {
+  color: var(--income-color);
+  font-weight: 500;
+}
+
+.type-expense {
+  color: var(--expense-color);
+  font-weight: 500;
+}
+
+.amount-income {
+  color: var(--income-color);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.amount-expense {
+  color: var(--expense-color);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .export-buttons {
+    float: none;
+    margin-top: 1rem;
+  }
+
+  .filters-section .row {
+    flex-direction: column;
+  }
+
+  .filters-section .col-1,
+  .filters-section .col-2,
+  .filters-section .col-3 {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .table {
+    font-size: 0.875rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem;
+  }
+
+  .chart-container {
+    height: 250px;
+  }
+}
